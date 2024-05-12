@@ -21,6 +21,29 @@ To integrate the date and time display functionality into your Android applicati
 3. Utilize the `BanglaDateUtils` class to retrieve Bangla and English dates and times.
 4. Set the retrieved dates and times to the respective TextViews using `setText`.
 
+# How to To get a Git project into your build:
+> Step 1. Add it in your root build.gradle at the end of repositories
+
+```gradle
+  dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
+  ```
+  
+  >Step 2. Add the dependency
+  
+  ```gradle
+  
+  dependencies {
+	        implementation ("com.github.Foysalofficial:Bangla-Date-Android-Library:2.0")
+	}
+  
+  ```
+
 ```java
 BanglaTimeTv = findViewById(R.id.BanglaTimeTv);
 BanglaDateTv = findViewById(R.id.BanglaDateTv);
